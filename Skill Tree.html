@@ -4,53 +4,67 @@
     <meta charset="UTF-8">
     <title>TCR - skill tree</title>
 </head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Project</title>
-</head>
 <style>
     .timer {
+        margin-left: 30px;
+    }
+    .timerMove {
+        margin-left: 1097px;
+        background-color: #024b34;
+        width: 500px;
+        height: 90px;
         display: flex;
-        justify-content: end;
-        padding: 10px;
+        align-items: center;
     }
     footer {
         background-color: #006445;
         color: white;
+        display: flex;
     }
     body {
         margin: 0;
+    }
+    .OneLine {
+        display: flex;
+        align-items: center;
+    }
+    .move_logo {
+        margin-left: 300px;
     }
 </style>
 <body>
 </body>
 <footer>
-    <img src="IMG/tcr-logo.png" alt="TCR">
-    <b id="Timer" class="timer"></b>
-    <script>
-        var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
+    <div class="OneLine">
+        <img class="move_logo" src="IMG/tcr-logo.png" alt="TCR">
+        <div class="timerMove">
+            <b class="timer">Open dag 26 jan:</b>
+            <b id="Timer" class="timer"></b>
+        </div>
 
-        var x = setInterval(function() {
+        <script>
+            var countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
 
-            var now = new Date().getTime();
+            var x = setInterval(function() {
 
-            var distance = countDownDate - now;
+                var now = new Date().getTime();
 
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                var distance = countDownDate - now;
 
-            document.getElementById("Timer").innerHTML = days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s ";
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("Timer").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
+                document.getElementById("Timer").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("Timer").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
 </footer>
 </html>
