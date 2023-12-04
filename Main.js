@@ -1,5 +1,5 @@
-
-var countDownDate = new Date("Jan 26, 2024 15:37:25").getTime();
+// Hier kun je een datum met het jaartal en tijd invullen tot wanneer de timer het moet counten
+var countDownDate = new Date("Jan 26, 2024").getTime();
 
 
 var x = setInterval(function() {
@@ -16,7 +16,7 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Display the result in the element with id="demo"
+  
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
 
