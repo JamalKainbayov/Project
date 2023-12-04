@@ -129,10 +129,37 @@ nav>ul>li>ul>li>ul {
 }
     
 #demo{
-  Color: #006445;
+  Color: white;
   Text-align:center;
   font-size:45px;
   font-family: 'Barlow', sans-serif;
   margin-top: 200px;
+  background-color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  max-height:500px;
+}
+body {
+  background-image: url(https://picsum.photos/1080/1920);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-attachment: fixed;
+  
+  height: 300vh;
+  
+}
+
+.cover {
+  background-color: white;
+  height: 50vh;
+  margin-top: 90vh;
+  padding: 20px;
+  
+}
+.div{
+
 }
 
