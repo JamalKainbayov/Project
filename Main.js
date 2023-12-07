@@ -1,4 +1,4 @@
-// Hier kun je een datum met het jaartal en tijd invullen tot wanneer de timer het moet counten
+// Hier kun je een datum met het jaartal en tijd invullen tot wanneer de timer het moet aftellen
 var countDownDate = new Date("Jan 26, 2024").getTime();
 
 
