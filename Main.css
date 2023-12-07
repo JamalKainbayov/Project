@@ -163,3 +163,25 @@ body {
   
 }
 
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 60%;
+padding-left: 20%;
+padding-right: 20%;
+border: 2px solid black;
+}
+
+.input,.label{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.gegevens{
+  display: flex;
+  flex-direction: row;
+}
+

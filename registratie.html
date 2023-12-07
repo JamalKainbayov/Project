@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <nav>
+        <a href="Index.html"><img src="download.png" alt="TCR logo"></a>
+            <ul>
+                <li><a href="#">Opleidingen</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Studeer bij ons</a></li>
+                <li><a href="#">Aanmelden</a></li>
+            </ul>
+    </nav>
+    <form action="text">
+        <h1>Contactgegevens</h1>
+        <p>Velden met een <b>*</b> zijn verplicht.</p>
+
+        <h2>Persoonsgegevens</h2>
+
+        <div class="gegevens">
+            <p>* Geslacht</p>
+            <div class="input">
+                <input type="radio" name="geslacht" id="man" value="man">
+                <input type="radio" name="geslacht" id="vrouw" value="vrouw">
+                <input type="radio" name="geslacht" id="anders" value="anders">
+            </div>
+            <div class="label">
+                <label for="man">Man</label>
+                <label for="vrouw">Vrouw</label>
+                <label for="Anders">Anders</label>
+            </div>
+        </div>
+
+        <div class="gegevens">
+            <div class="label">
+                <label for="voornaam">* Voornaam</label><br>
+                <label for="tussenvoegsel">  Tussenvoegsel(s)</label><br>
+                <label for="achternaam">* Achternaam</label><br>
+            </div>
+
+            <div class="input">
+                <input type="text" id="voornaam"><br>
+                <input type="text" id="tussenvoegsel"><br>            
+                <input type="text" id="achternaam"><br>            
+            </div>            
+        </div>
+
+        <div class="gegevens">
+            <div class="label">
+                <label for="email">* E-mailadres</label><br>
+            </div>
+            <div class="input">
+                <input type="text" id="email">  
+            </div>
+        </div>
+
+        <input type="submit" value="Verzend"><br>
+    </form>
+</body>
+</html>
+
