@@ -1,0 +1,39 @@
+.timer {
+    margin-left: 25px;
+    min-width: 151px;
+}
+.timerMove {
+    margin-left: 110%;
+    background-color: #024b34;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+footer {
+    background-color: #006445;
+    color: white;
+    display: flex;
+}
+body {
+    margin: 0;
+}
+.OneLine {
+    display: flex;
+    align-items: center;
+}
+.move_logo {
+    margin-left: 300px;
+}
+.header {
+    background-color: #006445;
+    color: white;
+    display: flex;
+    height: 90px;
+}
+.body {
+    background-color: white;
+    color: black;
+    display: flex;
+    height: 739px;
+}
