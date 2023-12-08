@@ -187,6 +187,7 @@ body {
 #user-score{
   color:#dbff4a;
 
+<<<<<<< HEAD
 }
 #total-score{
   color:#dbff4a;
@@ -222,3 +223,27 @@ body {
 .hide{
   display:none;
 }
+=======
+form{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 60%;
+padding-left: 20%;
+padding-right: 20%;
+border: 2px solid black;
+}
+
+.input,.label{
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.gegevens{
+  display: flex;
+  flex-direction: row;
+}
+
+>>>>>>> 922c0ba7935d72d2122741c10204d2d69024d5fb
