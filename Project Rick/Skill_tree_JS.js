@@ -20,3 +20,19 @@ var x = setInterval(function() {
     }
 }, 1000);
 
+function Show1() {
+    document.getElementById('niveau2').style.display = 'block';
+    document.getElementById('niveau3').style.display = 'none';
+    document.getElementById('niveau4').style.display = 'none';
+}
+function Show2() {
+    document.getElementById('niveau2').style.display = 'none';
+    document.getElementById('niveau3').style.display = 'block';
+    document.getElementById('niveau4').style.display = 'none';
+}
+
+function Show3() {
+    document.getElementById('niveau2').style.display = 'none';
+    document.getElementById('niveau3').style.display = 'none';
+    document.getElementById('niveau4').style.display = 'block';
+}
