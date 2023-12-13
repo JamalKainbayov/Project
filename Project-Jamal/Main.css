@@ -199,7 +199,6 @@
   .btn{
     font-size:large;
     font-weight: bold;
-    box-shadow: 0 6px 12px -2px rgba(#006445,.15);
     border-radius: 4px;
     padding:10px;
     color:#006445;
