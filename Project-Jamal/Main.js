@@ -12,7 +12,7 @@ var score = 0;
 
 let questions =[
     {
-        question:"Werkt Techniek College samen met andere grote bedrijven aan projecten?",
+        question:"Werkt Techniek College Rotterdam samen met andere grote bedrijven aan projecten?",
         answers: [
             {option:"Jazekers", answer:true},
             {option:"Nope", answer:false}
@@ -22,10 +22,10 @@ let questions =[
 
     },
     {
-        question:"",
+        question:"Ga je naar de open dag van het Techniek College Rotterdam?",
         answers: [
-            {option:"", answer:true},
-            {option:"", answer:false}
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
         ]
 
 
@@ -43,3 +43,13 @@ let questions =[
     }
 
 ]
+restartBtn.addEventListener('click', restart);
+prevBtn.addEventListener('click', prev);
+nextBtn.addEventListener('click' , next);
+submitBtn.addEventListener('click' , submit);
+
+function beginQuiz(){
+    currentQuestion=0;
+    questionText.innerHTML = questions[currentQuestion].question;
+    trueBtn.innerHTML
+}
