@@ -113,7 +113,12 @@ body {
     justify-content: center;
 }
 .BaseLine {
-    background: #d4af37;
+    background: #00734f;
     margin-top: 50px;
     width: 500px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.Tree {
 }
