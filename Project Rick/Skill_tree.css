@@ -51,7 +51,9 @@ ul {
     list-style-type: none;
     padding-left:0px;
 }
-
+/*https://developer.chrome.com/docs/css-ui/css-nesting
+kijk hier eens naar om de ul li a li a li a te fixen 😅
+*/
 nav>ul {
     height: 60px;
     line-height: 60px;
