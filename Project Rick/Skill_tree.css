@@ -29,15 +29,82 @@ body {
 .move_logo {
     margin-left: 300px;
 }
-.header {
-    background-color: #006445;
-    color: white;
-    display: flex;
-    height: 90px;
-}
 .body {
     background-color: white;
     color: black;
     display: flex;
     height: 739px;
+}
+nav{
+    background-color:#006445;
+    min-height:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:10px
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav li {
+    font-size: 2,5rem;
+    padding: 0 0rem 0 4rem;
+}
+a{
+    font-size:30px;
+    font-family: 'Barlow', sans-serif;
+}
+ul {
+    list-style-type: none;
+    padding-left:0px;
+}
+
+nav>ul {
+    height: 60px;
+    line-height: 60px;
+    align-items:center;
+    background-color: #d4af37;
+}
+
+nav>ul>li {
+    display: inline-block;
+    position: relative;
+    background-color: #006445;
+    border-radius: 0px;
+    padding: 0 30px;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white ;
+}
+
+nav ul li a:hover {
+    color: #dbff4a ;
+
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+
+nav>ul>li>ul>li {
+    position: relative;
+    background-color: #006445;
+}
+
+nav>ul>li>ul>li:hover>ul {
+    display: block;
+    padding-top:0%
 }
