@@ -168,5 +168,4 @@ function submit(){
     trueBtn.classList.add('hide');
     falseBtn.classList.add('hide');
     questionText.innerHTML = "Dank je wel voor het maken van de quiz!!";
-    document.getElementById('container').appendChild(element);  
 }
