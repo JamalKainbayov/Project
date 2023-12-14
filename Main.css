@@ -1,3 +1,228 @@
+<<<<<<< HEAD
+*{
+  margin:0;
+  padding:0;
+  font-family:'Barlow', sans-serif;
+}
+body{
+    margin:0px;
+}
+nav{
+    background-color:#006445;
+    min-height:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:10px
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; 
+}  
+nav li {
+        font-size: 2,5rem;
+        padding: 0 0rem 0 4rem;
+}
+nav a {
+    color:  #dbff4a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+nav img {
+    width: 5vw;
+}
+a{
+font-size:30px;
+font-family: 'Barlow', sans-serif;
+}
+.Home{
+    width:400px;
+    height:100px;
+    padding-right:60%
+    
+}
+video{
+    object-fit:cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 1;
+    left: 0;
+}
+.viewport-header {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+span{
+      display: block;
+      font-size: 3vw;
+      letter-spacing: 2vw;
+}
+
+   
+ul {  
+  list-style-type: none;
+  padding-left:0px;
+}
+
+nav>ul {
+  height: 60px;
+  line-height: 60px;
+  align-items:center;
+  background-color: #d4af37;
+}
+
+nav>ul>li {
+  display: inline-block;
+  position: relative;
+  background-color: #006445;
+  border-radius: 0px;
+  padding: 0 30px;
+}
+
+nav>ul>li:hover>ul {
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: white ;
+}
+
+nav ul li a:hover {
+  color: #dbff4a ;
+
+}
+
+nav>ul>li>ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  width: 100%;
+}
+
+nav>ul>li>ul>li {
+  position: relative;
+  background-color: #006445;
+}
+
+nav>ul>li>ul>li:hover>ul {
+  display: block;
+  padding-top:0%
+}
+
+
+
+
+nav>ul>li>ul>li>ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  display: none;
+}
+.Logo{
+    height:95px;
+    width:200px;
+}
+    
+.Page{
+  Color: #006445;
+  Text-align:center;
+  font-size:45px;
+  font-family: 'Barlow', sans-serif;
+  margin-top: 150px;
+  background-color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1500px;
+  
+  
+  
+}
+body {
+  background-image: url(https://isential.nl/wp-content/uploads/2022/02/Pand-Prins-Alexanderlaan-55.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  background-attachment: fixed;
+  
+  height: 150vh;
+  
+}
+
+.cover {
+  background-color: white;
+  height: 50vh;
+  margin-top: 90vh;
+  padding: 20px;
+  
+}
+.container{
+  width:80vw;
+  max-width: 100%;
+  background-color:#006445;
+  height:30vw;
+  box-shadow:0 0 3px 4px;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  border-radius:8px;
+  text-align:center;
+}
+.score{
+  font-size:large;
+  font-weight:bold;
+}
+#user-score{
+  color:#dbff4a;
+
+}
+#total-score{
+  color:#dbff4a;
+}
+.content{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn{
+  font-size:large;
+  font-weight: bold;
+  box-shadow: 0 6px 12px -2px rgba(#006445,.15);
+  border-radius: 4px;
+  padding:10px;
+  color: #dbff4a;
+  margin:6px;
+  cursor:pointer;
+}
+.btn:hover{
+  color:black;
+  padding:15px;
+}
+.options{
+  padding:10px;
+  order:3;
+}
+.controls{
+  padding:10px;
+  order:4;
+}
+.hide{
+  display:none;
+=======
 *{
   margin:0;
   padding:0;
@@ -215,4 +440,5 @@ body {
 }
 .hide{
   display:none;
+>>>>>>> 7c76347c1665fce78278f4ab5ce392efcc3cfe10
 }
