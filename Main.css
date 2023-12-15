@@ -143,7 +143,7 @@ nav>ul>li>ul>li>ul {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  height:3000px
+  height:1500px
   
   
   
@@ -156,7 +156,7 @@ body {
   
   background-attachment: fixed;
   
-  height: 300vh;
+  height: 150vh;
   
 }
 
@@ -221,4 +221,33 @@ body {
 }
 .hide{
   display:none;
+}
+.Tech{
+  max-width: 800px;
+  margin-top: 50px;
+}
+.open{
+  font-size:50px;
+  margin-top:250px
+}
+.lol{
+  margin-top:250px;
+  background-color:#006445;
+  height:500px;
+  color:#dbff4a;
+  text-align: center;
+}
+
+footer{
+  position: fixed;
+  left:0px;
+  bottom:-8px;
+  width:100%;
+  size:10px;
+  background-color: #006445;
+  height:80px;
+ 
+}
+footer nav{
+max-height:80px;
 }
