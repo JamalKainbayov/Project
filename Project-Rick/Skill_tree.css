@@ -112,7 +112,7 @@ body {
     background-color: white;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 .BaseLine {
     background: #00734f;
@@ -124,23 +124,23 @@ body {
     color: white;
     height: 700px;
 }
-.Tree {
-    text-align: center;
+.BaseLine2 {
+    background: #00734f;
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 700px;
 }
-.niveau2 {
-    display: none;
-}
-.niveau3 {
-    display: none;
-}
-.niveau4 {
-    display: none;
-}
-.arrow {
-    width: 40px;
-    height: 40px;
-}
-.SKILL {
-    height: 110px;
-    width: 320px;
-}
+.BaseLine3 {
+     background: #00734f;
+     margin-top: 20px;
+     width: 500px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     color: white;
+     height: 700px;
+ }
