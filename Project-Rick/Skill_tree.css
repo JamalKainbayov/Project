@@ -99,7 +99,7 @@ nav>ul>li>ul>li {
 
 nav>ul>li>ul>li:hover>ul {
     display: block;
-    padding-top:0%;
+    padding-top:0%
 }
 
 body {
@@ -135,37 +135,76 @@ body {
     height: 700px;
 }
 .BaseLine3 {
-     background: #00734f;
-     margin-top: 20px;
-     width: 500px;
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     color: white;
-     height: 700px;
- }
-.HelpDesk {
+    background: #00734f;
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 700px;
+}
+
+.Skills {
+    height: 100px;
+    width: 100px;
+    background-color: #00734f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Skill {
-.Skill:hover {
-}
-    padding: 10px;
-    
-    width: 500px;
-    justify-content: space-around;
-    display: flex;
-.FirstLine {
-}
-    border: 5px solid #013625;
-    background: #024b34;
-}
-    border: 1px solid transparent;
-
-    color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    border-radius: 50%;
-    background-color: #024b34;
-    width: 100px;
     height: 100px;
+    width: 100px;
+    background-color: #024b34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid transparent;
+}
+.SkillB {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid transparent;
+}
+.SkillR {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 1px solid transparent;
+}
+.Skill:hover {
+    background: #024b34;
+    border: 5px solid #013625;
+}
+.SkillB:hover {
+    background: blue;
+    border: 5px solid #013625;
+}
+.SkillR:hover {
+    background: red;
+    border: 5px solid #013625;
+}
+.FirstLine {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    padding: 10px;
+}
+.Blank {
+    background-color: #00734f;
+    border: #00734f;
+    height: 100px;
+    width: 100px;
+}

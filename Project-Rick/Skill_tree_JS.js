@@ -24,3 +24,7 @@ function BasicH() {
     document.getElementById('BasicH').style.backgroundColor = '#024b34';
     document.getElementById('BasicH'). style.border = '5px solid #013625';
 }
+function BasicH1() {
+    document.getElementById('BasicH1').style.backgroundColor = 'red';
+    document.getElementById('BasicH1'). style.border = '5px solid #013625';
+}
