@@ -20,22 +20,7 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-let N2 = document.getElementById('niveau2')
-let N3 = document.getElementById('niveau3')
-let N4 = document.getElementById('niveau4')
-function Show1() {
-    N2.style.display = 'block';
-    N3.style.display = 'none';
-    N4.style.display = 'none';
-}
-function Show2() {
-    N2.style.display = 'none';
-    N3.style.display = 'block';
-    N4.style.display = 'none';
-}
-
-function Show3() {
-    N2.style.display = 'none';
-    N3.style.display = 'none';
-    N4.style.display = 'block';
+function BasicH() {
+    document.getElementById('BasicH').style.backgroundColor = '#024b34';
+    document.getElementById('BasicH'). style.border = '5px solid #013625';
 }
