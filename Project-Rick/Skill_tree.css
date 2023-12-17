@@ -146,3 +146,26 @@ body {
  }
 .HelpDesk {
 }
+.Skill {
+.Skill:hover {
+}
+    padding: 10px;
+    
+    width: 500px;
+    justify-content: space-around;
+    display: flex;
+.FirstLine {
+}
+    border: 5px solid #013625;
+    background: #024b34;
+}
+    border: 1px solid transparent;
+
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    background-color: #024b34;
+    width: 100px;
+    height: 100px;
