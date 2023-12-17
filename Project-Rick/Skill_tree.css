@@ -99,7 +99,7 @@ nav>ul>li>ul>li {
 
 nav>ul>li>ul>li:hover>ul {
     display: block;
-    padding-top:0%
+    padding-top:0%;
 }
 
 body {
@@ -144,35 +144,5 @@ body {
      color: white;
      height: 700px;
  }
-
-.Skills {
-    height: 100px;
-    width: 100px;
-    background-color: #00734f;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.Skill {
-    height: 100px;
-    width: 100px;
-    background-color: #024b34;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-    border: 1px solid transparent;
-}
-.Skill:hover {
-    background: #024b34;
-    border: 5px solid #013625;
-}
-.FirstLine {
-    display: flex;
-    justify-content: space-around;
-    width: 500px;
-    padding: 10px;
+.HelpDesk {
 }
