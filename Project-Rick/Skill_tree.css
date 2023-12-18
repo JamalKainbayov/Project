@@ -167,7 +167,7 @@ body {
 .SkillB {
     height: 100px;
     width: 100px;
-    background-color: blue;
+    background-color: #024b34;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,7 +177,7 @@ body {
 .SkillR {
     height: 100px;
     width: 100px;
-    background-color: red;
+    background-color: #024b34;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,15 +185,12 @@ body {
     border: 1px solid transparent;
 }
 .Skill:hover {
-    background: #024b34;
     border: 5px solid #013625;
 }
 .SkillB:hover {
-    background: blue;
     border: 5px solid #013625;
 }
 .SkillR:hover {
-    background: red;
     border: 5px solid #013625;
 }
 .FirstLine {
