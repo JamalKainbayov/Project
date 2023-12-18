@@ -164,26 +164,6 @@ body {
     color: white;
     border: 1px solid transparent;
 }
-.SkillB {
-    height: 100px;
-    width: 100px;
-    background-color: #024b34;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: 1px solid transparent;
-}
-.SkillR {
-    height: 100px;
-    width: 100px;
-    background-color: #024b34;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border: 1px solid transparent;
-}
 .Skill:hover {
     border: 5px solid #013625;
 }
@@ -204,4 +184,7 @@ body {
     border: #00734f;
     height: 100px;
     width: 100px;
+}
+.clicked {
+    border: 5px solid #013625;
 }

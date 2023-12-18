@@ -20,15 +20,20 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-function BasicH() {
-    document.getElementById('BasicH'). style.border = '5px solid #013625';
+let count = 0
+function logHelloOnClick() {
+    const skillElements = document.querySelectorAll('.Skill');
+
+    skillElements.forEach(skill => {
+        skill.addEventListener('click', () => {
+            // Toggle the 'clicked' class for the clicked element
+            skill.classList.toggle('clicked');
+            count++
+
+            if (count === 27) {
+                document.getElementById('Nerd').innerText = 'NERD';
+            }
+        });
+    });
 }
-function BasicH1() {
-    document.getElementById('BasicH1'). style.border = '5px solid #013625';
-}
-function InstallH() {
-    document.getElementById('InstallH'). style.border = '5px solid #013625';
-}
-function InstallH1() {
-    document.getElementById('InstallH1').style.border = '5px solid #013625';
-}
+logHelloOnClick();
