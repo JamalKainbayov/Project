@@ -28,10 +28,11 @@ function logHelloOnClick() {
         skill.addEventListener('click', () => {
             // Toggle the 'clicked' class for the clicked element
             skill.classList.toggle('clicked');
+            console.log(count)
             count++
 
             if (count === 27) {
-                document.getElementById('Nerd').innerText = 'NERD';
+                document.getElementById('achievement').style.display = 'block';
             }
         });
     });

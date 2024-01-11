@@ -58,7 +58,7 @@ nav>ul {
     height: 60px;
     line-height: 60px;
     align-items:center;
-    background-color: #d4af37;
+    background-color: #006445;
 }
 
 nav>ul>li {
@@ -187,4 +187,8 @@ body {
 }
 .clicked {
     border: 5px solid #013625;
+}
+.adv {
+    display: none;
+    height: 90px;
 }
