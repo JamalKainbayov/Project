@@ -22,7 +22,7 @@ let questions =[
 
     },
     {
-        question:"Ga je naar de open dag van het Techniek College Rotterdam?",
+        question:"Leer je coderen in SQL en Javascript?",
         answers: [
             {option:"Ja", answer:true},
             {option:"Nee", answer:true}
@@ -32,10 +32,30 @@ let questions =[
 
     },
     {
-        question:"",
+        question:"Heb je ervaring met software?",
         answers: [
-            {option:"", answer:true},
-            {option:"", answer:false}
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"De opmaak van een site maak je in:",
+        answers: [
+            {option:"Html/css", answer:true},
+            {option:"Javascript", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"Kun je je diploma voor software developement halen binnen 3 jaar?",
+        answers: [
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
         ]
 
 
@@ -100,12 +120,12 @@ trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
 trueBtn.onclick = () => {
     let ano=0;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<3){
+        if(score<5){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<2){
+    if(currentQuestion<4){
         next();
     }
 }
@@ -113,12 +133,12 @@ falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
 falseBtn.onclick = () => {
     let ano=1;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<3){
+        if(score<5){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<2){
+    if(currentQuestion<4){
         next();
     }
  }
@@ -136,12 +156,12 @@ function prev(){
     trueBtn.onclick = () => {
         let ano=0;
         if(questions[currentQuestion].answers[ano].answer){
-            if(score<3){
+            if(score<5){
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion<2){
+        if(currentQuestion<4){
             next();
         }
     }
@@ -149,23 +169,30 @@ function prev(){
     falseBtn.onclick = () => {
         let ano=1;
         if(questions[currentQuestion].answers[ano].answer){
-        if(score<3){
+        if(score<5){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<2){
+    if(currentQuestion<4){
         next();
     }
 }
 nextBtn.classList.remove('hide');
 }
 
-function submit(){
+ 
+ 
+
+function submit() {
     prevBtn.classList.add('hide');
     nextBtn.classList.add('hide');
     submitBtn.classList.add('hide');
     trueBtn.classList.add('hide');
     falseBtn.classList.add('hide');
-    questionText.innerHTML = "Dank je wel voor het maken van de quiz!!";
+    if (score > 3) {
+        questionText.textContent = "Gefeliciteerd je bent geschikt voor deze opleiding!";
+    } else {
+        questionText.textContent = "Dank je wel voor het maken van deze quiz. Mischien past een ander opleiding bij jou!";
+    }
 }

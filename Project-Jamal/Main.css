@@ -224,3 +224,9 @@
     font-family:'Barlow', sans-serif; 
     font-size: 60px;
   }
+  footer nav{
+    max-height:90px;
+    }
+    .Yt{
+      height:85px;
+    }
