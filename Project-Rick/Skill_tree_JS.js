@@ -20,7 +20,21 @@ var x = setInterval(function() {
     }
 }, 1000);
 
-function BasicH() {
-    document.getElementById('BasicH').style.backgroundColor = '#024b34';
-    document.getElementById('BasicH'). style.border = '5px solid #013625';
+let count = 0
+function logHelloOnClick() {
+    const skillElements = document.querySelectorAll('.Skill');
+
+    skillElements.forEach(skill => {
+        skill.addEventListener('click', () => {
+            // Toggle the 'clicked' class for the clicked element
+            skill.classList.toggle('clicked');
+            console.log(count)
+            count++
+
+            if (count === 27) {
+                document.getElementById('achievement').style.display = 'block';
+            }
+        });
+    });
 }
+logHelloOnClick();

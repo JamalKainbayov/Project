@@ -58,7 +58,7 @@ nav>ul {
     height: 60px;
     line-height: 60px;
     align-items:center;
-    background-color: #d4af37;
+    background-color: #006445;
 }
 
 nav>ul>li {
@@ -135,15 +135,15 @@ body {
     height: 700px;
 }
 .BaseLine3 {
-     background: #00734f;
-     margin-top: 20px;
-     width: 500px;
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-     color: white;
-     height: 700px;
- }
+    background: #00734f;
+    margin-top: 20px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    height: 700px;
+}
 
 .Skills {
     height: 100px;
@@ -158,16 +158,19 @@ body {
     height: 100px;
     width: 100px;
     background-color: #024b34;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-
     border: 1px solid transparent;
 }
 .Skill:hover {
-    background: #024b34;
+    border: 5px solid #013625;
+}
+.SkillB:hover {
+    border: 5px solid #013625;
+}
+.SkillR:hover {
     border: 5px solid #013625;
 }
 .FirstLine {
@@ -175,4 +178,17 @@ body {
     justify-content: space-around;
     width: 500px;
     padding: 10px;
+}
+.Blank {
+    background-color: #00734f;
+    border: #00734f;
+    height: 100px;
+    width: 100px;
+}
+.clicked {
+    border: 5px solid #013625;
+}
+.adv {
+    display: none;
+    height: 90px;
 }
