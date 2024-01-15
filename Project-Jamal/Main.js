@@ -1,5 +1,4 @@
 const restartBtn = document.getElementById('restart');
-const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const submitBtn = document.getElementById('submit');
 const trueBtn = document.getElementById('True');
@@ -25,7 +24,7 @@ let questions =[
         question:"Leer je coderen in SQL en Javascript?",
         answers: [
             {option:"Ja", answer:true},
-            {option:"Nee", answer:true}
+            {option:"Nee", answer:false}
         ]
 
 
@@ -64,7 +63,7 @@ let questions =[
 
 ]
 restartBtn.addEventListener('click', restart);
-prevBtn.addEventListener('click', prev);
+
 nextBtn.addEventListener('click' , next);
 submitBtn.addEventListener('click' , submit);
 
@@ -92,14 +91,13 @@ function beginQuiz(){
                 score++;
             }        
     }
-    prevBtn.classList.add('hide');
     }
 }
 beginQuiz();
 
 function restart(){
     currentQuestion = 0;
-    prevBtn.classList.remove('hide');
+   
     nextBtn.classList.remove('hide');
     submitBtn.classList.remove('hide');
     trueBtn.classList.remove('hide');
@@ -113,7 +111,7 @@ function next(){
     currentQuestion++;
     if(currentQuestion>2){
         nextBtn.classList.add('hide');
-        prevBtn.classList.remove('hide');
+
     }
 questionText.innerHTML = questions[currentQuestion].question;
 trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
@@ -142,15 +140,9 @@ falseBtn.onclick = () => {
         next();
     }
  }
- prevBtn.classList.remove('hide');
 }
 
-function prev(){
-    currentQuestion--;
-    if(currentQuestion<=0){
-        prevBtn.classList.add('hide');
-        nextBtn.classList.remove('hide');
-    }
+
     questionText.innerHTML = questions[currentQuestion].question;
     trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
     trueBtn.onclick = () => {
@@ -179,13 +171,13 @@ function prev(){
     }
 }
 nextBtn.classList.remove('hide');
-}
+
 
  
  
 
 function submit() {
-    prevBtn.classList.add('hide');
+    
     nextBtn.classList.add('hide');
     submitBtn.classList.add('hide');
     trueBtn.classList.add('hide');
@@ -197,5 +189,5 @@ function submit() {
     }
 }
 function hallo() {
-
+    score--
 }
