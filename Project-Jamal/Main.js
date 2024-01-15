@@ -35,7 +35,7 @@ let questions =[
         question:"Heb je ervaring met software?",
         answers: [
             {option:"Ja", answer:true},
-            {option:"Nee", answer:false}
+            {option:"Nee", answer:true}
         ]
 
 
@@ -195,4 +195,7 @@ function submit() {
     } else {
         questionText.textContent = "Dank je wel voor het maken van deze quiz. Mischien past een ander opleiding bij jou!";
     }
+}
+function hallo() {
+
 }
