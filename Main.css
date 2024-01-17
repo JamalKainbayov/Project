@@ -142,11 +142,7 @@ nav>ul>li>ul>li>ul {
   background-color:white ;
   max-width: 800px;
   margin-left: auto;
-  margin-right: auto;
-  height:3000px
-  
-  
-  
+  margin-right: auto; 
 }
 body {
   background-image: url(https://isential.nl/wp-content/uploads/2022/02/Pand-Prins-Alexanderlaan-55.jpeg);
@@ -229,7 +225,8 @@ body {
 }
 .open{
   font-size:50px;
-  margin-top:250px
+  margin-top:250px;
+  text-align: center;;
 }
 .lol{
   margin-top:200px;
@@ -240,18 +237,26 @@ body {
 }
 
 footer{
-  position: fixed;
   left:0px;
   bottom:-8px;
   width:100%;
   size:10px;
   background-color: #006445;
   height:80px;
- 
+  padding-top:10px;
 }
-footer nav{
-max-height:80px;
-}
+
 .Yt{
-  height:75px;
+  height:65px;
+  width:65px;
+
+}
+.Yo{
+  width:70px;
+  height:65px
+}
+h1{
+  color:#006445;
+  font-size:26px;
+  text-align: left;
 }
