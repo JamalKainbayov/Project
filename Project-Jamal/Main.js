@@ -63,8 +63,8 @@ let questions =[
     {
         question:"hoeveel locaties heeft TCR die software developement geven?",
         answers: [
-            {option:"4", answer:true},
-            {option:"2", answer:false}
+            {option:"2", answer:false},
+            {option:"4", answer:true}
         ]
 
 
@@ -73,8 +73,8 @@ let questions =[
     {
         question:"valt project communicatie onder ICT?",
         answers: [
-            {option:"Ja", answer:true},
-            {option:"Nee", answer:false}
+            {option:"Nee", answer:false},
+            {option:"Ja", answer:true}
         ]
 
 
@@ -109,7 +109,57 @@ let questions =[
 
 
 
-    }
+    },
+    {
+        question:"Heb je hiervoor al ervaring met programmeertalen?",
+        answers: [
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"Zijn HTML-tags hoofdlettergevoelig?",
+        answers: [
+            {option:"Nee", answer:true},
+            {option:"Ja", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"Kan JavaScript direct in HTML-documenten worden ingebed?",
+        answers: [
+            {option:"Nee", answer:false},
+            {option:"Ja", answer:true}
+        ]
+
+
+
+    },
+    {
+        question:"Kun je met HTML een hyperlink maken naar een andere webpagina?",
+        answers: [
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"Is JavaScript een client-side scriptingtaal?",
+        answers: [
+            {option:"Nee", answer:true},
+            {option:"Ja", answer:false}
+        ]
+
+
+
+    } 
 ]
 restartBtn.addEventListener('click', restart);
 
@@ -123,12 +173,12 @@ function beginQuiz(){
     trueBtn.onclick = () => {
         let ano=0;
         if (questions [currentQuestion].answers[ano].answer){
-            if (score<8){
+            if (score<13){
                 score++;
             }
         }
         userScore.innerHTML= score;
-        if(currentQuestion<8){
+        if(currentQuestion<13){
             next();
         }
     }
@@ -136,7 +186,7 @@ function beginQuiz(){
     falseBtn.onclick = () => {
         let ano=1;
         if(questions[currentQuestion].answers[ano].answer){
-            if(score<7){
+            if(score<12){
                 score++;
             }        
     }
@@ -158,7 +208,7 @@ function restart(){
 
 function next(){
     currentQuestion++;
-    if(currentQuestion>8){
+    if(currentQuestion>13){
         nextBtn.classList.add('hide');
 
     }
@@ -167,12 +217,12 @@ trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
 trueBtn.onclick = () => {
     let ano=0;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<6){
+        if(score<11){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<9){
+    if(currentQuestion<14){
         next();
     }
 }
@@ -180,12 +230,12 @@ falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
 falseBtn.onclick = () => {
     let ano=1;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<10){
+        if(score<15){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<9){
+    if(currentQuestion<14){
         next();
     }
  }
@@ -202,7 +252,7 @@ falseBtn.onclick = () => {
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion<9){
+        if(currentQuestion<14){
             next();
         }
     }
@@ -210,12 +260,12 @@ falseBtn.onclick = () => {
     falseBtn.onclick = () => {
         let ano=1;
         if(questions[currentQuestion].answers[ano].answer){
-        if(score<10){
+        if(score<15){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<4){
+    if(currentQuestion<9){
         next();
     }
 }
@@ -231,7 +281,7 @@ function submit() {
     submitBtn.classList.add('hide');
     trueBtn.classList.add('hide');
     falseBtn.classList.add('hide');
-    if (score > 9) {
+    if (score => 9) {
         questionText.textContent = "Gefeliciteerd je bent geschikt voor deze opleiding!";
     } else {
         questionText.textContent = "Dank je wel voor het maken van deze quiz. Mischien past een ander opleiding bij jou!";
