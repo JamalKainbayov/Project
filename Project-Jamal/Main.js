@@ -59,8 +59,57 @@ let questions =[
 
 
 
-    }
+    },
+    {
+        question:"hoeveel locaties heeft TCR die software developement geven?",
+        answers: [
+            {option:"4", answer:true},
+            {option:"2", answer:false}
+        ]
 
+
+
+    },
+    {
+        question:"valt project communicatie onder ICT?",
+        answers: [
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"heb je ervaring met coderen?",
+        answers: [
+            {option:"Ja", answer:true},
+            {option:"Nee", answer:true}
+        ]
+
+
+
+    },
+    {
+        question:"hoeveel codeer talen geven wij?",
+        answers: [
+            {option:"6", answer:true},
+            {option:"5", answer:false}
+        ]
+
+
+
+    },
+    {
+        question:"wat is een basis codeer taal?",
+        answers: [
+            {option:"HTML/CSS", answer:true},
+            {option:"PHP", answer:false}
+        ]
+
+
+
+    }
 ]
 restartBtn.addEventListener('click', restart);
 
@@ -74,12 +123,12 @@ function beginQuiz(){
     trueBtn.onclick = () => {
         let ano=0;
         if (questions [currentQuestion].answers[ano].answer){
-            if (score<3){
+            if (score<8){
                 score++;
             }
         }
         userScore.innerHTML= score;
-        if(currentQuestion<2){
+        if(currentQuestion<8){
             next();
         }
     }
@@ -87,7 +136,7 @@ function beginQuiz(){
     falseBtn.onclick = () => {
         let ano=1;
         if(questions[currentQuestion].answers[ano].answer){
-            if(score<3){
+            if(score<7){
                 score++;
             }        
     }
@@ -109,7 +158,7 @@ function restart(){
 
 function next(){
     currentQuestion++;
-    if(currentQuestion>2){
+    if(currentQuestion>8){
         nextBtn.classList.add('hide');
 
     }
@@ -118,12 +167,12 @@ trueBtn.innerHTML = questions[currentQuestion].answers[0].option;
 trueBtn.onclick = () => {
     let ano=0;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<5){
+        if(score<6){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<4){
+    if(currentQuestion<9){
         next();
     }
 }
@@ -131,12 +180,12 @@ falseBtn.innerHTML = questions[currentQuestion].answers[1].option;
 falseBtn.onclick = () => {
     let ano=1;
     if(questions[currentQuestion].answers[ano].answer){
-        if(score<5){
+        if(score<10){
             score++;
         }
     }
     userScore.innerHTML = score;
-    if(currentQuestion<4){
+    if(currentQuestion<9){
         next();
     }
  }
@@ -148,12 +197,12 @@ falseBtn.onclick = () => {
     trueBtn.onclick = () => {
         let ano=0;
         if(questions[currentQuestion].answers[ano].answer){
-            if(score<5){
+            if(score<10){
                 score++;
             }
         }
         userScore.innerHTML = score;
-        if(currentQuestion<4){
+        if(currentQuestion<9){
             next();
         }
     }
@@ -161,7 +210,7 @@ falseBtn.onclick = () => {
     falseBtn.onclick = () => {
         let ano=1;
         if(questions[currentQuestion].answers[ano].answer){
-        if(score<5){
+        if(score<10){
             score++;
         }
     }
@@ -182,7 +231,7 @@ function submit() {
     submitBtn.classList.add('hide');
     trueBtn.classList.add('hide');
     falseBtn.classList.add('hide');
-    if (score > 3) {
+    if (score > 9) {
         questionText.textContent = "Gefeliciteerd je bent geschikt voor deze opleiding!";
     } else {
         questionText.textContent = "Dank je wel voor het maken van deze quiz. Mischien past een ander opleiding bij jou!";
