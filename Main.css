@@ -136,7 +136,7 @@ nav>ul>li>ul>li>ul {
 .Page{
   Color: #dbff4a;
   Text-align:center;
-  font-size:45px;
+  font-size:35px;
   font-family: 'Barlow', sans-serif;
   margin-top: 150px;
   background-color:white ;
@@ -229,11 +229,12 @@ body {
   text-align: center;;
 }
 .lol{
-  margin-top:200px;
-  background-color:#006445;
-  height:500px;
-  color:#dbff4a;
-  text-align: center;
+    margin: 0;
+    background-color:#006445;
+
+    height:300px;
+    color:#dbff4a;
+    text-align: center;
 }
 
 footer{
