@@ -1,0 +1,219 @@
+HEAD
+*{
+  margin:0;
+  padding:0;
+  font-family:'Barlow', sans-serif;
+}
+body{
+    margin:0px;
+    font-family:'Barlow', sans-serif;
+    background-image: url(https://isential.nl/wp-content/uploads/2022/02/Pand-Prins-Alexanderlaan-55.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+nav{
+    background-color:#006445;
+    min-height:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    gap:10px
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none; 
+}  
+nav li {
+    font-size: 2,5rem;
+    padding: 0 0rem 0 4rem;
+}
+nav a {
+    font-size:30px;
+    color: #dbff4a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+nav img {
+    width: 9vw;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #006445;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6%;
+    padding-top: 5px;
+}
+
+footer img{
+    width: 2.5vw;
+
+}
+
+footer a {
+    font-size:30px;
+    color: #dbff4a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+
+}
+
+.start{
+    font-family:'Barlow', sans-serif;
+    position: relative;
+    height: 100%;
+    width: 35%;
+    padding: 12rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description{
+    color: white;
+    background-color: #006445;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.description p{
+    width: 70%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 45px;
+    margin: 0;
+}
+
+#init{
+    margin-top: 2rem;
+    background: #004630;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.chatbot{
+    box-shadow: 0 0 5px #dbff4a;
+    background-color: #004630;
+    position: fixed;
+    height: 35rem;
+    width: 45;
+    top: 15%;
+    left: 45%;
+    right: 5%;
+    margin: auto;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #006445;
+    background-color: #006445;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    z-index: 1;
+    font-size: 14px;
+    box-shadow: 0 0 5px rgb(211,211,211);
+}
+
+header img{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin: 0.1rem 0.5rem;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.title{
+    font-size: 16px;
+}
+
+.name{
+    font-weight: bold;
+}
+
+#chatbox{
+    position: relative;
+    overflow: auto;
+    top: 13%;
+    height: 29.5rem;
+    font-size: 12px;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+/* Deze klassen worden in de JavaScript file gebruikt */
+
+.message{
+    background: whitesmoke;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: max-content;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0 0 5px rgb(215, 215, 215);
+    max-width: 50%;
+}
+
+.reply{
+    background: #dbff4a;
+    padding: 5px 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    width: max-content;
+    font-size: 18px;
+    color: #006445;
+    box-shadow: 0 0 5px rgb(215, 215, 215);
+    max-width: 50%;
+}
+
+.option{
+    padding: 5px 20px;
+    columns: lightsalmon;
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
+    margin: 0.3rem 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: 500;
+    background: white;
+    text-align: center;
+    font-size: 18px;
+    color: blueviolet;
+}
+
+.test{
+    text-align: right;
+    margin: 20px 0;
+}
+

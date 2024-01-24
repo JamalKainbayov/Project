@@ -1,3 +1,4 @@
+// alles van de html document gepakt en in js gezet
 const restartBtn = document.getElementById('restart');
 const nextBtn = document.getElementById('next');
 const submitBtn = document.getElementById('submit');
@@ -8,7 +9,7 @@ const questionText = document.getElementById('question-text');
 
 let currentQuestion = 0;
 var score = 0;
-
+// De 15 vragen van de quiz 
 let questions =[
     {
         question:"Werkt Techniek College Rotterdam samen met andere grote bedrijven aan projecten?",
@@ -161,6 +162,7 @@ let questions =[
 
     } 
 ]
+// events voor buttons en de punten telling
 restartBtn.addEventListener('click', restart);
 
 nextBtn.addEventListener('click' , next);
@@ -274,14 +276,15 @@ nextBtn.classList.remove('hide');
 
  
  
-
+// sumbit verstopt alle buttons behalve opnieuw starten
 function submit() {
     
     nextBtn.classList.add('hide');
     submitBtn.classList.add('hide');
     trueBtn.classList.add('hide');
     falseBtn.classList.add('hide');
-    if (score => 9) {
+   //meer dan 60% goed dan ben je geschikt
+    if (score >8) {
         questionText.textContent = "Gefeliciteerd je bent geschikt voor deze opleiding!";
     } else {
         questionText.textContent = "Dank je wel voor het maken van deze quiz. Mischien past een ander opleiding bij jou!";

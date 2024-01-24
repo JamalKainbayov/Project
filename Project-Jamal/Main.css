@@ -62,7 +62,7 @@
   span{
         display: block;
         font-size: 3vw;
-        letter-spacing: 2vw;
+  
   }
   
      
@@ -143,7 +143,7 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    height:3000px
+    height:1000px
     
     
     
@@ -156,7 +156,7 @@
     
     background-attachment: fixed;
     
-    height: 300vh;
+
     
   }
   
@@ -224,9 +224,18 @@
     font-family:'Barlow', sans-serif; 
     font-size: 60px;
   }
-  footer nav{
-    max-height:90px;
-    }
-    .Yt{
-      height:85px;
-    }
+
+  footer{
+    left:0px;
+    bottom:-8px;
+    width:100%;
+    size:10px;
+    background-color: #006445;
+    height:80px;
+    padding-top:10px;
+  }
+  
+  .Yt{
+    height:65px;
+    width:65px;
+  }
